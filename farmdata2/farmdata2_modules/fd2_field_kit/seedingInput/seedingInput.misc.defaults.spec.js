@@ -7,7 +7,7 @@ describe('Test Seeding Input Miscellaneous Defaults', () =>{
     it("Check that the SUBMIT button is disabled", () => {
         cy.get("[data-cy=submit-button]").should("be.disabled")
     })
-})
+
     it('Test the comment text box is empty and enable', ()=>{
         cy.get("[data-cy=comments").should("be.empty")
         cy.get("[data-cy=comments").should('not.be.disabled')
