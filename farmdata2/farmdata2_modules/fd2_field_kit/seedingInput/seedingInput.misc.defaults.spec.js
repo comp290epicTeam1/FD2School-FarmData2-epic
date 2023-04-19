@@ -9,7 +9,7 @@ describe('Test Seeding Input Miscellaneous Defaults', () =>{
     })
     //Ha test comment
     it("Check that the page has a header", () => {
-        cy.get("[data-cy=text-center]").click()
-        cy.get("[data-cy=text-center]").should("have text", "Seeding Input Log")
+        // cy.get("[data-cy=text-center]").click()
+        cy.get("[data-cy=header]").should("have.text", "Seeding Input Log")
     })
 })

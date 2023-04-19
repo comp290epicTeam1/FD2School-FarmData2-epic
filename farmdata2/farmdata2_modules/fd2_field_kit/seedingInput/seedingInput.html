@@ -1,6 +1,6 @@
 <body>
     <div id='seedingInput'>
-        <h1 style='text-align:center;'>Seeding Input Log</h1> 
+        <h1 data-cy="header" style='text-align:center;'>Seeding Input Log</h1> 
         <div data-cy="alert-container" id="scrollBanners" class="alert-boxs" style='max-width: 500px; text-align: center; margin:auto; font-size: large'>
             <error-banner data-cy="alert-err-handler" :visible="errBannerVisibility"></error-banner>
             <div data-cy='alert-cancel' class="alert alert-danger" style="display: none;" role="alert" v-show="isConfirmed == false">
