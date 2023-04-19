@@ -8,13 +8,3 @@ describe('Test Seeding Input Miscellaneous Defaults', () =>{
         cy.get("[data-cy=submit-button]").should("be.disabled")
     })
 })
-
-
-
-
-
-
-
-
-
-
