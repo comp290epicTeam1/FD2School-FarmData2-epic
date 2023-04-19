@@ -12,4 +12,9 @@ describe('Test Seeding Input Miscellaneous Defaults', () =>{
     it('Test the Submit button box is labeled', ()=>{
         cy.get("[data-cy=submit-button]").should("have.text","Submit").should('be.visible')
     })
+    //Ha test comment
+    it("Check that the page has a header", () => {
+        cy.get("[data-cy=text-center]").click()
+        cy.get("[data-cy=text-center]").should("have text", "Seeding Input Log")
+    })
 })
