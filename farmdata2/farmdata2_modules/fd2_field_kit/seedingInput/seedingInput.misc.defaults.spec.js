@@ -8,7 +8,7 @@ describe('Test Seeding Input Miscellaneous Defaults', () =>{
         cy.get("[data-cy=submit-button]").should("be.disabled")
     })
 
-    it('Test the comment text box is empty and enable', ()=>{
+    it('Test the comment text box is empty and enabled', ()=>{
         cy.get("[data-cy=comments").should("be.empty")
         cy.get("[data-cy=comments").should('not.be.disabled')
     })
@@ -21,6 +21,7 @@ describe('Test Seeding Input Miscellaneous Defaults', () =>{
         cy.get("[data-cy=header]").should("have.text", "Seeding Input Log")
     })
     it("Check that the section has a label comment", () => {
+        cy.get("[data-cy=comments]").should("have.text","Comment")
         cy.get("[data-cy=comments]").should("be.visible")     
     })
 })
