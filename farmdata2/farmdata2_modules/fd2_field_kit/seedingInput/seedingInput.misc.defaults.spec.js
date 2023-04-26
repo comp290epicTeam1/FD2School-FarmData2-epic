@@ -1,3 +1,6 @@
+/**
+ * This file test some default contents of the Seeding Input Form in the FieldKit tab.
+ */
 describe('Test Seeding Input Miscellaneous Defaults', () =>{
     beforeEach(()=>{
         cy.login("manager1", "farmdata2")
@@ -20,7 +23,7 @@ describe('Test Seeding Input Miscellaneous Defaults', () =>{
     it("Check that the page has a header", () => {
         cy.get("[data-cy=header]").should("have.text", "Seeding Input Log")
     })
-    
+
     it("Check that the section has a label comment", () => {
         cy.get("[data-cy=comments]").should("have.text","Comment")
         cy.get("[data-cy=comments]").should("be.visible")     
