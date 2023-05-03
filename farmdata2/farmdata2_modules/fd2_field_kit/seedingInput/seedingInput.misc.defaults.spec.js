@@ -25,7 +25,8 @@ describe('Test Seeding Input Miscellaneous Defaults', () =>{
     })
 
     it("Check that the section has a label comment", () => {
-        cy.get("[data-cy=comments]").should("have.text","Comment")
-        cy.get("[data-cy=comments]").should("be.visible")     
+        cy.get("[data-cy=comments-label]").should("have.text","Comments")
+        cy.get("[data-cy=comments-label]").should("be.visible")     
     })
+
 })
