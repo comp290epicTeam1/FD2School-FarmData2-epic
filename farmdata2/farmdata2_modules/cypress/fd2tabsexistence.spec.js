@@ -13,15 +13,15 @@ describe("Test tabs existence for each user's account", ()=>{
         })
     
         it("Check the FieldKit tab", () => {
-            cy.get(".tabs--primary").get("a").contains("FieldKit")
+            cy.get(".tabs--primary").get("a").contains("FieldKit").should("be.visible")
         })
     
         it("Check the BarnKit tab", () => {
-            cy.get(".tabs--primary").get("a").contains("BarnKit")
+            cy.get(".tabs--primary").get("a").contains("BarnKit").should("be.visible")
         })
     
         it("Check the FD2 Config tab", () => {
-            cy.get(".tabs--primary").get("a").contains("FD2 Config")
+            cy.get(".tabs--primary").get("a").contains("FD2 Config").should("be.visible")
         })
     })
 
@@ -38,11 +38,11 @@ describe("Test tabs existence for each user's account", ()=>{
         })
     
         it("Check the FieldKit tab", () => {
-            cy.get(".tabs--primary").get("a").contains("FieldKit")
+            cy.get(".tabs--primary").get("a").contains("FieldKit").should("be.visible")
         })
     
         it("Check the BarnKit tab", () => {
-            cy.get(".tabs--primary").get("a").contains("BarnKit")
+            cy.get(".tabs--primary").get("a").contains("BarnKit").should("be.visible")
         })
     
         it("Check the FD2 Config tab", () => {
