@@ -13,15 +13,15 @@ describe("Test tabs existence for each user's account", ()=>{
         })
     
         it("Check the FieldKit tab", () => {
-            cy.get(".tabs--primary").get("a").contains("FieldKit").should("be.visible")
+            cy.get('.tabs--primary > li > .glyphicons-processed').should("contain", "FieldKit")
         })
     
         it("Check the BarnKit tab", () => {
-            cy.get(".tabs--primary").get("a").contains("BarnKit").should("be.visible")
+            cy.get('.tabs--primary > li > .glyphicons-processed').should("contain", "BarnKit")
         })
     
         it("Check the FD2 Config tab", () => {
-            cy.get(".tabs--primary").get("a").contains("FD2 Config").should("be.visible")
+            cy.get('.tabs--primary > li > .glyphicons-processed').should("contain", "FD2 Config")
         })
     })
 
@@ -38,15 +38,15 @@ describe("Test tabs existence for each user's account", ()=>{
         })
     
         it("Check the FieldKit tab", () => {
-            cy.get(".tabs--primary").get("a").contains("FieldKit").should("be.visible")
+            cy.get('.tabs--primary > li > .glyphicons-processed').should("contain", "FieldKit")
         })
     
         it("Check the BarnKit tab", () => {
-            cy.get(".tabs--primary").get("a").contains("BarnKit").should("be.visible")
+            cy.get('.tabs--primary > li > .glyphicons-processed').should("contain", "BarnKit")
         })
     
         it("Check the FD2 Config tab", () => {
-            cy.get(".tabs--primary").get("a").get("FD2 Config").should("not.exist")
+            cy.get('.tabs--primary > li > .glyphicons-processed').should("not.contain", "FD2 Config")
         })
     })
 
@@ -62,15 +62,15 @@ describe("Test tabs existence for each user's account", ()=>{
         })
     
         it("Check the FieldKit tab", () => {
-            cy.get(".tabs--primary").get("a").get("FieldKit").should("not.exist")
+            cy.get('.tabs--primary > li > .glyphicons-processed').should("not.contain", "FieldKit")
         })
     
         it("Check the BarnKit tab", () => {
-            cy.get(".tabs--primary").get("a").get("BarnKit").should("not.exist")
+            cy.get('.tabs--primary > li > .glyphicons-processed').should("not.contain", "BarnKit")
         })
     
         it("Check the FD2 Config tab", () => {
-            cy.get(".tabs--primary").get("a").get("FD2 Config").should("not.exist")
+            cy.get('.tabs--primary > li > .glyphicons-processed').should("not.contain", "FD2 Config")
         })
     })
 })
